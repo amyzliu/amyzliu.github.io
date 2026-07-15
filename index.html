@@ -1,1 +1,59 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Welcome to Amy Liu's world!</title><base href="/"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="favicon.ico"><link href="styles.2230f1420d6c46d9c9c1.bundle.css" rel="stylesheet"/></head><body><app-root></app-root><script type="text/javascript" src="inline.bd635b9d84e807f3638f.bundle.js"></script><script type="text/javascript" src="polyfills.f20484b2fa4642e0dca8.bundle.js"></script><script type="text/javascript" src="main.5f1abb35be343fb5468e.bundle.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Amy Liu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #0d0d0f url("amy.jpg") center/cover no-repeat fixed;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.55));
+      z-index: 0;
+    }
+    main { position: relative; z-index: 1; }
+    h1 {
+      font-size: clamp(2.5rem, 9vw, 5rem);
+      font-weight: 300;
+      letter-spacing: 0.12em;
+      text-shadow: 0 2px 20px rgba(0,0,0,.5);
+    }
+    a {
+      display: inline-block;
+      margin-top: 1.5rem;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      opacity: 0.85;
+      border-bottom: 1px solid rgba(255,255,255,.4);
+      padding-bottom: 2px;
+      transition: opacity .2s ease;
+    }
+    a:hover { opacity: 1; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Amy Liu</h1>
+    <a href="https://github.com/amyzliu" target="_blank" rel="noopener">GitHub</a>
+  </main>
+</body>
+</html>
