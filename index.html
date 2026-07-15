@@ -35,9 +35,14 @@
       letter-spacing: 0.12em;
       text-shadow: 0 2px 20px rgba(0,0,0,.5);
     }
-    .card-link {
-      display: inline-block;
-      margin-top: 1.5rem;
+    .roles {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem 2.25rem;
+    }
+    .role {
       color: #fff;
       background: none;
       border: none;
@@ -46,12 +51,13 @@
       font-size: 1rem;
       letter-spacing: 0.15em;
       text-transform: uppercase;
+      text-decoration: none;
       opacity: 0.85;
       border-bottom: 1px solid rgba(255,255,255,.4);
       padding: 0 0 2px;
       transition: opacity .2s ease;
     }
-    .card-link:hover { opacity: 1; }
+    .role:hover { opacity: 1; }
 
     /* Lightbox overlay */
     .lightbox {
@@ -114,7 +120,12 @@
 <body>
   <main>
     <h1>Amy Liu</h1>
-    <button class="card-link" onclick="openCard()">Model</button>
+    <nav class="roles">
+      <button class="role" onclick="openCard()">Model</button>
+      <a class="role" href="#" onclick="return false">DJ</a>
+      <a class="role" href="#" onclick="return false">Artist</a>
+      <a class="role" href="https://github.com/amyzliu" target="_blank" rel="noopener">Engineer</a>
+    </nav>
   </main>
 
   <div class="lightbox" id="lightbox" onclick="if(event.target===this)closeCard()">
